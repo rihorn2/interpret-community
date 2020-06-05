@@ -728,6 +728,14 @@
     "@uifabric/styling" "^7.10.4"
     tslib "^1.10.0"
 
+"@uifabric/merge-styles@^7.14.1":
+  version "7.14.1"
+  resolved "https://registry.yarnpkg.com/@uifabric/merge-styles/-/merge-styles-7.14.1.tgz#6e375b72909294b9e725dd19b8f7e3c76fe9bfe1"
+  integrity sha512-nKkk0o9XyVh8HL174ZSDqw3IUnN2qb+kO73vg/rwioKPEQyuPGoEfij8jrb+CGpcCGnMYi53IeB1tm8ySlNatg==
+  dependencies:
+    "@uifabric/set-version" "^7.0.13"
+    tslib "^1.10.0"
+
 "@uifabric/merge-styles@^7.8.5":
   version "7.8.5"
   resolved "https://registry.yarnpkg.com/@uifabric/merge-styles/-/merge-styles-7.8.5.tgz#e19fc9f17cc5934989c05f4bb06d80c7e898ccf6"
@@ -743,6 +751,13 @@
   dependencies:
     "@uifabric/set-version" "^7.0.4"
     "@uifabric/utilities" "^7.11.5"
+    tslib "^1.10.0"
+
+"@uifabric/set-version@^7.0.13":
+  version "7.0.13"
+  resolved "https://registry.yarnpkg.com/@uifabric/set-version/-/set-version-7.0.13.tgz#7dcf017bb57fa1ebd3a63dc518014611507a42e4"
+  integrity sha512-SRsYaacvNykS9lRwKNJgrJuhPV4ytblthFNg0+Wi6+zvIf/w50k/nBlmXVetV5U9dAuX4njSkd+/3iOpgevkyw==
+  dependencies:
     tslib "^1.10.0"
 
 "@uifabric/set-version@^7.0.4":
@@ -763,6 +778,17 @@
     "@uifabric/utilities" "^7.11.5"
     tslib "^1.10.0"
 
+"@uifabric/styling@^7.12.3":
+  version "7.12.15"
+  resolved "https://registry.yarnpkg.com/@uifabric/styling/-/styling-7.12.15.tgz#599fdc0fde0b3c8af221dc2fd68052a41c42275f"
+  integrity sha512-mp/nRyE5Ig6a8BPEkXy/F8ckeQptQCm1SOQDPB1VT1PlknHoOXqqTVn2e1e2DGpWcpFIw4dbodqym3rgpUqkjA==
+  dependencies:
+    "@microsoft/load-themed-styles" "^1.10.26"
+    "@uifabric/merge-styles" "^7.14.1"
+    "@uifabric/set-version" "^7.0.13"
+    "@uifabric/utilities" "^7.20.3"
+    tslib "^1.10.0"
+
 "@uifabric/utilities@^7.11.5":
   version "7.11.5"
   resolved "https://registry.yarnpkg.com/@uifabric/utilities/-/utilities-7.11.5.tgz#1a23ad565808b11716f26d00107db3ec538f952c"
@@ -771,6 +797,16 @@
     "@uifabric/merge-styles" "^7.8.5"
     "@uifabric/set-version" "^7.0.4"
     prop-types "^15.5.10"
+    tslib "^1.10.0"
+
+"@uifabric/utilities@^7.20.3":
+  version "7.20.3"
+  resolved "https://registry.yarnpkg.com/@uifabric/utilities/-/utilities-7.20.3.tgz#b2a784ad1fd8f054429fda8880a28e5932e75c1e"
+  integrity sha512-Amg+qdnNKx0yxjoEFHanM2jTCYfCZAlHPDHcS+BCiSwzeQrEPhlOrtZVPJtagNVhXLFiC09uDsmE/BF6dHb+ww==
+  dependencies:
+    "@uifabric/merge-styles" "^7.14.1"
+    "@uifabric/set-version" "^7.0.13"
+    prop-types "^15.7.2"
     tslib "^1.10.0"
 
 "@webassemblyjs/ast@1.8.5":
@@ -3128,16 +3164,16 @@ internal-ip@^4.2.0:
     default-gateway "^4.2.0"
     ipaddr.js "^1.9.0"
 
-"interpret-dashboard@ 0.1.7-beta8":
-  version "0.1.7-beta8"
-  resolved "https://registry.yarnpkg.com/interpret-dashboard/-/interpret-dashboard-0.1.7-beta8.tgz#35c11f4c783045d6316ad9681af12984eeea7400"
-  integrity sha512-kQGpJjA3EBX/6hLc1ZcziJ47e5Ok5eVj4sQKpISr7YAtceJA/HnHTx79aW0/5FXQGeNG82brb9rR2CPsvtqn0w==
+"interpret-dashboard@ 0.1.9-beta1":
+  version "0.1.9-beta1"
+  resolved "https://registry.yarnpkg.com/interpret-dashboard/-/interpret-dashboard-0.1.9-beta1.tgz#0590e331550cb2abf771d84c4b0a03ecf76a50c2"
+  integrity sha512-n10RdrEpnzBCWA2omWBFh2agGp1TsDiYq3ujQ48/ESKYzW3mtwFm7vt1TyXV1yFEwB+urdE4+SH2aSZ5Z+eqGg==
   dependencies:
     jmespath "^0.15.0"
     localized-strings "^0.2.2"
     lodash "^4.17.11"
     memoize-one "^5.0.2"
-    mlchartlib "0.1.38-beta1"
+    mlchartlib "0.1.38-beta2"
     moment "^2.24.0"
     office-ui-fabric-react "^7.74.1"
     plotly.js-dist "^1.45.3"
@@ -3739,11 +3775,12 @@ mkdirp@^0.5.0, mkdirp@^0.5.1, mkdirp@~0.5.0:
   dependencies:
     minimist "0.0.8"
 
-mlchartlib@0.1.38-beta1:
-  version "0.1.38-beta1"
-  resolved "https://registry.yarnpkg.com/mlchartlib/-/mlchartlib-0.1.38-beta1.tgz#baad6a82ae9aedfbfae73fde4c1a24ba5745029b"
-  integrity sha512-r/4dwOR8fkppHnD0B5PbA/+S+t3iViwcS+tuvNj7e9zdjOhFkeHHB8ghkQGVfWR8h4ScBtoqy7QHoSL6aoDlNw==
+mlchartlib@0.1.38-beta2:
+  version "0.1.38-beta2"
+  resolved "https://registry.yarnpkg.com/mlchartlib/-/mlchartlib-0.1.38-beta2.tgz#1e2a621b1372402406055a637b7c8a443a7d67fe"
+  integrity sha512-MFh/xD2j5xVO3x1gGAhZYlQU23wU/CxiQ2kqN1EDzLbBA9B0VNFKhYShyBMNh7W46HQFVu4L9QmgHEIYV/uZUw==
   dependencies:
+    "@uifabric/styling" "^7.12.3"
     jmespath "^0.15.0"
     lodash "^4.17.11"
     moment "^2.24.0"
@@ -4366,7 +4403,7 @@ promise-inflight@^1.0.1:
   resolved "https://registry.yarnpkg.com/promise-inflight/-/promise-inflight-1.0.1.tgz#98472870bf228132fcbdd868129bad12c3c029e3"
   integrity sha1-mEcocL8igTL8vdhoEputEsPAKeM=
 
-prop-types@^15.5.10, prop-types@^15.6.2:
+prop-types@^15.5.10, prop-types@^15.6.2, prop-types@^15.7.2:
   version "15.7.2"
   resolved "https://registry.yarnpkg.com/prop-types/-/prop-types-15.7.2.tgz#52c41e75b8c87e72b9d9360e0206b99dcbffa6c5"
   integrity sha512-8QQikdH7//R2vurIJSutZ1smHYTcLpRWEOlHnzcWHmBYrOGUysKwSsrC89BCiFj3CbrfJ/nXFdJepOVrY1GCHQ==
