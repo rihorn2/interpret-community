@@ -406,18 +406,20 @@ export class NewExplanationDashboard extends React.PureComponent<IExplanationDas
         );
     }
 
+    // call the predict hook with the first row from the dataset, if any non-null value is returned, predict is valid
     private async validatePredictMethod(): Promise<void> {
         if (this.props.requestPredictions && this.props.testData !== undefined && this.props.testData.length > 0) {
-            try {
-                const abortController = new AbortController();
-                const prediction = await this.props.requestPredictions([this.props.testData[0]], abortController.signal);
-                if (prediction !== undefined) {
-                    this.setState({requestPredictions: this.props.requestPredictions});
+            setTimeout(async () => {
+                try {
+                    const abortController = new AbortController();
+                    const prediction = await this.props.requestPredictions([this.props.testData[0]], abortController.signal);
+                    if (prediction !== undefined) {
+                        this.setState({requestPredictions: this.props.requestPredictions});
+                    }
+                } catch {
+
                 }
-            } catch {
-
-            }
-
+            }, 500);
         }
 
     }
