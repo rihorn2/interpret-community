@@ -432,38 +432,18 @@ tabular_explainer = TabularExplainer(clf.steps[-1][1],
 
 Load the visualization dashboard in your noteboook to understand and interpret your model:
 
-### Global visualizations
+### Dashboard Tabs
 
-The following plots provide a global view of the trained model along with its predictions and explanations.
+The following tabs view of the trained model along with its predictions and explanations. Users can create custom cohorts to explore performance for subgroups and to determine feature importances within a cohort.
 
-|Plot|Description|
+|Tab|Description|
 |----|-----------|
-|Data Exploration| An overview of the dataset along with prediction values.|
-|Global Importance|Shows the top K (configurable K) important features globally. This chart is useful for understanding the global behavior of the underlying model.|
-|Explanation Exploration|Demonstrates how a feature is responsible for making a change in model’s prediction values (or probability of prediction values). |
-|Summary| Uses a signed local feature importance values across all data points to show the distribution of the impact each feature has on the prediction value.|
-
+|Model Performance| Evaluate how a model's predictions compare to the true values, grouping by features or in custom cohorts.|
+|Data Explorer| Explore the distribution of data across features and predictions, looking at aggregate statistics in box plots and histograms, or viewing individual rows in a scatter plot.|
+|Aggregate Feature Importance|Shows the top K (configurable K) important features for each cohort. This chart is useful for understanding the global behavior of the underlying model. Clicking on a feature opens the corresponding dependence plot, showing how a feature's importance varies as a function of the feature's value.|
+|Individual Feature Importance and What-If|Explore the importance of features for individual points in a cohort by selecting the points of interest in the scatter chart. The bar chart for the selected points shows the feature importances. What-If analysis can be performed by editing the values of a row and observing how it changes the predictions. Individual conditional expectation (ICE) plots show the result of sweeping over a window of values for a selected feature.|
 
 ![Visualization Dashboard Global](https://docs.microsoft.com/en-us/azure/machine-learning/service/media/machine-learning-interpretability-explainability/global-charts.png)
-
-
-
-### Local visualizations
-
-You can click on any individual data point at any time of the preceding plots to load the local feature importance plot for the given data point.
-
-|Plot|Description|
-|----|-----------|
-|Local Importance|Shows the top K (configurable K) important features globally. This chart is useful for understanding the local behavior of the underlying model on a specific data point.|
-|Perturbation Exploration|Allows you to change feature values of the selected data point and observe how those changes will affect prediction value.|
-|Individual Conditional Expectation (ICE)| Allows you to change a feature value from a minimum value to a maximum value to see how the data point's prediction changes when a feature changes.|
-
-
-![Visualization Dashboard Local Feature Importance](https://docs.microsoft.com/en-us/azure/machine-learning/service/media/machine-learning-interpretability-explainability/local-charts.png)
-
-![Visualization Dashboard Feature Perturbation](https://docs.microsoft.com/en-us/azure/machine-learning/service/media/machine-learning-interpretability-explainability/perturbation.gif)
-
-![Visualization Dashboard ICE Plots](https://docs.microsoft.com/en-us/azure/machine-learning/service/media/machine-learning-interpretability-explainability/ice-plot.png)
 
 
 To load the visualization dashboard, use the following code:
